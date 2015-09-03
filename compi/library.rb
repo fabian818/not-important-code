@@ -1,14 +1,16 @@
 # El método devuelve true si el caracter es una letra
+class String
+	def letter?
+		self =~ /[[:alpha:]]/
+	end
 
-def letter?(lookAhead)
-	lookAhead =~ /[[:alpha:]]/
+	# El método devuelve true si el caracter es un número
+
+	def numeric?
+		self =~ /[[:digit:]]/
+	end
 end
 
-# El método devuelve true si el caracter es un número
-
-def numeric?(lookAhead)
-	lookAhead =~ /[[:digit:]]/
-end
 
 # Método para ejecutar las cadenas
 

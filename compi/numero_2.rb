@@ -3,7 +3,7 @@ load 'library.rb'
 def evalue(status, char)
 	case status
 	when 0
-		if letter?(char)
+		if char.letter?
 			1
 		else
 			'e'
@@ -11,13 +11,13 @@ def evalue(status, char)
 	when 1
 		if char == '#'
 			2
-		elsif numeric?(char)
+		elsif char.numeric?
 			1
 		else
 			'e'
 		end
 	when 2
-		if letter?(char)
+		if char.letter?
 			3
 		else
 			'e'

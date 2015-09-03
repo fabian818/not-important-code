@@ -9,9 +9,9 @@ def evalue(status, char)
 			'e'
 		end
 	when 1
-		if numeric?(char)
+		if char.numeric?
 			1
-		elsif letter?(char)
+		elsif char.letter?
 			2
 		else
 			'e'

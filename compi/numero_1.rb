@@ -8,7 +8,7 @@ load 'library.rb'
 def evalue(status, char)
 	case status
 	when 0
-		if numeric?(char)
+		if char.numeric?
 			1
 		else
 			'e'
@@ -16,7 +16,7 @@ def evalue(status, char)
 	when 1
 		if char == '$'
 			2
-		elsif letter?(char)
+		elsif char.letter?
 			1
 		else
 			'e'
