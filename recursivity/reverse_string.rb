@@ -6,4 +6,4 @@ def reverse string
 	end
 end
 
-p reverse "tu mama calata profe de mierda"
+p reverse "unica"
